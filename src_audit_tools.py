@@ -14,11 +14,11 @@ class CopyWithLineNumbersCommand(sublime_plugin.TextCommand):
         
         # set file name
         if view.file_name():
-            max_line_num = self.get_line_num(sels[-1].end())
-            max_line_num_len = len(str(max_line_num))
-            format_string = "%0" + str(max_line_num_len) + "d: %s\n"
-            selection = self.view.line(selection)  # Extend selection to full lines
-            first_line_num = self.get_line_num(selection.begin())
+            #max_line_num = self.get_line_num(sels[-1].end())
+            #max_line_num_len = len(str(max_line_num))
+            #format_string = "%0" + str(max_line_num_len) + "d: %s\n"
+            #selection = self.view.line(selection)  # Extend selection to full lines
+            #first_line_num = self.get_line_num(selection.begin())
 
             output = "### At " + current_file_name + "\n\n"
         else:
