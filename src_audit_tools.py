@@ -10,7 +10,7 @@ class CopyWithLineNumbersCommand(sublime_plugin.TextCommand):
         ## Change this if you want it to save to file instead of clipboard
         ## also uncomment the first 5 lines of the
         ## save_notes function, and comment the last line.
-        notes_path = os.path.realpath(os.readlink(os.environ['HOME'] +'/Desktop'))
+        notes_path = os.path.realpath(os.environ['HOME'] +'/Desktop/src_notes')
         
         # set file name
         if view.file_name():
