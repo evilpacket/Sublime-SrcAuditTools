@@ -20,7 +20,7 @@ class CopyWithLineNumbersCommand(sublime_plugin.TextCommand):
             #selection = self.view.line(selection)  # Extend selection to full lines
             #first_line_num = self.get_line_num(selection.begin())
 
-            output = "### At " + current_file_name + "\n\n"
+            output = "### At " + current_file_name + "\n\n```"
         else:
             output = "### in scratchpad <unsaved>\n\n```\n\n"
         # To print all the line numbers with the same lenght
